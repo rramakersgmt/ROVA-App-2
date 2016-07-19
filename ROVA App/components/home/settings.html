@@ -31,12 +31,18 @@
         <form>
           	<div>
                 <ul class="fieldlist" style="padding-left: 10px;" data-style="inset">
-                    <h3>Server</h3> 
-                    <input id="fldserver"   data-bind="value:fldserver,   disabled:isLoggedIn" class="k-textbox" type="text" style="width:300px;"/>
-                    <h3>Login</h3> 
-                    <input id="fldlogin"    data-bind="value:fldlogin,    disabled:isLoggedIn" class="k-textbox" type="text"/>
-                    <h3>Wachtwoord</h3> 
-                    <input id="fldpassword" data-bind="value:fldpassword, disabled:isLoggedIn" class="k-textbox" type="password"/>
+                    <li>
+                    	<label for="fldserver">Server:</label> 
+                    	<input id="fldserver"   data-bind="value:fldserver,   disabled:isLoggedIn" type="text" style="width:300px;"/>
+                    </li>
+                    <li>
+                    	<label for="fldlogin">Login:</h3> 
+                    	<input id="fldlogin"    data-bind="value:fldlogin,    disabled:isLoggedIn" type="text"/>
+                    </li>
+                    <li>
+                        <label for="fldpassword">Wachtwoord:</label> 
+                		<input id="fldpassword" data-bind="value:fldpassword, disabled:isLoggedIn" type="password"/>
+                	</li>
                 </ul>
                    
 		    </div>

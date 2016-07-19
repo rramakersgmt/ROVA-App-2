@@ -1,0 +1,43 @@
+<div data-role="view" data-title="Instellingen" data-layout="main-nonav" data-model="app.authenticationView" data-show="app.authenticationView.onShow" data-after-show="app.authenticationView.afterShow">
+    <div class="signin-view">
+        
+    <!-- START_CUSTOM_CODE_authenticationViewModel -->
+    <!-- Add custom code here. For more information about custom code, see http://docs.telerik.com/platform/screenbuilder/troubleshooting/how-to-keep-custom-code-changes -->
+
+    <!-- END_CUSTOM_CODE_authenticationViewModel -->
+
+    <!-- START_CUSTOM_CODE_authenticationView -->
+    	<form>
+            <ul data-role="listview" data-style="inset" class="km-widget km-listview km-list km-listinset km-label-above">
+                <li>
+                    <label>Server: 
+                    	<input id="fldserver"   data-bind="value: authenticationView1Model.fldserver,   disabled:isLoggedIn" type="text" />
+                    </label>
+                </li>
+                <li>
+                    <label>Login: 
+                    	<input id="fldlogin"    data-bind="value: authenticationView1Model.fldlogin,    disabled:isLoggedIn" type="text"/>
+                    </label>    
+                </li>
+                <li>
+                    <label>Wachtwoord: 
+                    	<input id="fldpassword" data-bind="value: authenticationView1Model.password, disabled:isLoggedIn" type="password"/>
+                    </label>
+                </li>
+            </ul>    
+        
+            <div class="button-group button-group-vertical">
+                <a data-role="button" class="primary" data-bind="events: { click: authenticationViewModel.signin }">Inloggen</a>
+
+            </div>
+        	<div id="footer" class="center">
+            	<img src="styles/icons/gmt.png" style="padding-top: 120px;">
+            </div>
+        </form>
+    </div>
+    <div class="offline" align="center" style="display:none;">
+        You are currently offline. Before using this app in offline mode you must initialize it while you are online
+    </div>
+    
+    <!-- END_CUSTOM_CODE_authenticationView -->
+</div>
