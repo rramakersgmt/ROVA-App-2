@@ -1,0 +1,89 @@
+{
+  "type": "kendo-ui-mobile",
+  "views": [
+    {
+      "type": "kendo-ui-mobile:view",
+      "name": "home",
+      "components": [
+        {
+          "type": "kendo-ui-mobile:editableList",
+          "listExtraFields": [],
+          "detailExtraFields": [],
+          "components": [
+            {
+              "type": "kendo-ui-mobile:editableListForm",
+              "components": [
+                {
+                  "type": "kendo-ui-mobile:editableListFormField",
+                  "name": "bonnr",
+                  "title": "Afval",
+                  "inputType": "shortText",
+                  "dataBindingOptional": "afval_omschr"
+                }
+              ],
+              "name": "editableListForm8",
+              "formType": "list"
+            },
+            {
+              "type": "kendo-ui-mobile:editableListForm",
+              "components": [
+                {
+                  "type": "kendo-ui-mobile:editableListFormField",
+                  "name": "bonnr",
+                  "title": "Bonnummer",
+                  "inputType": "shortText",
+                  "dataBindingOptional": "bonnr"
+                },
+                {
+                  "type": "kendo-ui-mobile:editableListFormField",
+                  "name": "dropdownlist",
+                  "title": "Afval",
+                  "inputType": "dropdownlist",
+                  "titlePosition": "left",
+                  "dataBinding": "afval_id"
+                }
+              ],
+              "name": "editableListForm11",
+              "formType": "edit"
+            }
+          ],
+          "name": "homeModel",
+          "dataProvider": "wegingen",
+          "collection": "",
+          "headerField": "bonnr",
+          "filterField": "bonnr",
+          "pullToRefresh": true,
+          "endlessScroll": false,
+          "deleteItemButton": false,
+          "detailHeaderFieldSource": "static",
+          "detailHeaderFieldValue": "Detail",
+          "addItemForm": false,
+          "editItemForm": true,
+          "editScreenHeaderSource": "static",
+          "editScreenHeaderValue": "Edit"
+        }
+      ],
+      "title": "Wegingen",
+      "addToNavigation": true,
+      "icon": "home"
+    }
+  ],
+  "dataProviders": [
+    {
+      "type": "kendo-ui-mobile:dataProvider",
+      "name": "wegingen",
+      "title": "wegingen",
+      "source": "json",
+      "url": "http://clearweigh.gmt.nl/demo/wegingen"
+    }
+  ],
+  "name": "kendoUiMobileApp",
+  "navigation": "tabstrip",
+  "view": "home",
+  "transition": "slide",
+  "showMoreTab": false,
+  "skin": "nova",
+  "skinMainColor": "#32364c",
+  "skinTextColor": "#ffffff",
+  "skinAccentColor": "#ff4350"
+}
