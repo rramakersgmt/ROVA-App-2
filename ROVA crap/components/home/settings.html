@@ -30,12 +30,16 @@
     <div id="settingsForm" class="form-view" style="font-size:110%;">
         <form>
           	<div>
-                <ul class="fieldlist" style="padding-left: 10px;" data-style="inset">
-                    <h3>Server</h3> 
+                <ul class="fieldlist" data-style="inset">
+                    <h3 class="heading">Server</h3> 
                     <input id="fldserver"   data-bind="value:fldserver,   disabled:isLoggedIn" class="k-textbox" type="text" style="width:300px;"/>
-                    <h3>Login</h3> 
+                    
+                    <span data-icon="ios7-user" class="km-icon km-ios7-user"></span>  
+                    <h3 class="heading">Login</h3> 
                     <input id="fldlogin"    data-bind="value:fldlogin,    disabled:isLoggedIn" class="k-textbox" type="text"/>
-                    <h3>Wachtwoord</h3> 
+                    
+                    <span data-icon="i-lock" class="km-icon km-i-lock"></span>
+                    <h3 class="heading"> Wachtwoord</h3> 
                     <input id="fldpassword" data-bind="value:fldpassword, disabled:isLoggedIn" class="k-textbox" type="password"/>
                 </ul>
                    

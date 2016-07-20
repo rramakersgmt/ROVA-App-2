@@ -163,7 +163,76 @@
 
 /* START_CUSTOM_CODE_kendoUiMobileApp */
 
+.icons{
+    display: flex;
+}
 
+.icons li{
+  list-style:none;
+  color: white; 
+  float:left;
+  margin:15px;
+  text-align:center;
+}
+
+.icons li span{
+  display:block;
+}
+
+.km-i-chart-area:after { content: "\E050"; }
+
+.km-ios7-user-fill:after { content: "\E319"; }
+
+.km-ios7-user:after { content: "\E219"; font-size: 35px!important; }
+
+.km-i-lock:after { content: "\E0FF"; font-size: 35px!important; }
+
+.km-ios7-user-fill, .km-i-chart-area{
+    font-size: 40px!important;
+}
+
+
+.heading{
+    text-transform: uppercase;
+    font-weight: 700!important;
+    font-size: 1.3em!important;
+}
+
+.fieldlist{
+    padding-left: 10px;
+    text-align: center;
+}
+
+.fieldlist input{
+    border-radius: 8px;
+    padding: 2%;   
+}
+
+.wegingen li:nth-child(even){
+    background: #2d3e50;
+}
+
+.wegingen li:nth-child(even) h3{
+    color: white!important;
+}
+
+.wegingen li:nth-child(even) p{
+    color: white!important;
+}
+
+.edittt{
+    background: lightblue!important;
+}
+
+.edittt span:nth-child(odd){
+ 	font-weight: bold!important;   
+}
+
+.edittt span{
+    color: #2d3e50!important;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
 /* Add custom code here. For more information about custom code, see http://docs.telerik.com/platform/screenbuilder/troubleshooting/how-to-keep-custom-code-changes */
 
 
