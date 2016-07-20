@@ -1,9 +1,1 @@
-{
-  "CorePlugins": [
-    "cordova-plugin-dialogs",
-    "cordova-plugin-globalization",
-    "cordova-plugin-whitelist",
-    "org.apache.cordova.labs.keyboard",
-    "com.phonegap.plugins.barcodescanner@5.0.0"
-  ]
-}
+{}

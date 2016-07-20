@@ -16,7 +16,6 @@
                 {
                   "type": "kendo-ui-mobile:editableListFormField",
                   "name": "bonnr",
-                  "dataBindingRelationChildren": "[]",
                   "title": "Afval",
                   "inputType": "shortText",
                   "dataBindingOptional": "afval_omschr"
@@ -31,7 +30,6 @@
                 {
                   "type": "kendo-ui-mobile:editableListFormField",
                   "name": "bonnr",
-                  "dataBindingRelationChildren": "[]",
                   "title": "Bonnummer",
                   "inputType": "shortText",
                   "dataBindingOptional": "bonnr"
@@ -39,7 +37,6 @@
                 {
                   "type": "kendo-ui-mobile:editableListFormField",
                   "name": "dropdownlist",
-                  "dataBindingRelationChildren": "[]",
                   "title": "Afval",
                   "inputType": "dropdownlist",
                   "titlePosition": "left",
@@ -52,14 +49,12 @@
           ],
           "name": "homeModel",
           "dataProvider": "wegingen",
-          "collection": "Activities",
+          "collection": "",
           "headerField": "bonnr",
           "filterField": "bonnr",
-          "isMapView": false,
           "pullToRefresh": true,
           "endlessScroll": false,
           "deleteItemButton": false,
-          "deleteItemConfirmation": true,
           "detailHeaderFieldSource": "static",
           "detailHeaderFieldValue": "Detail",
           "addItemForm": false,
@@ -71,55 +66,6 @@
       "title": "Wegingen",
       "addToNavigation": true,
       "icon": "home"
-    },
-    {
-      "type": "kendo-ui-mobile:view",
-      "name": "authenticationView",
-      "components": [
-        {
-          "type": "kendo-ui-mobile:authentication",
-          "name": "authenticationViewModel",
-          "dataProvider": "wegingen",
-          "emailLabel": "Login:",
-          "passwordLabel": "Wachtwoord:",
-          "signinLabel": "Inloggen",
-          "signinRedirect": "home",
-          "enableRegistration": false,
-          "enableLogout": true,
-          "logoutLabel": "Uitloggen",
-          "enableRememberme": true,
-          "remembermeLabel": "Onthoud mijn inloggegevens"
-        }
-      ],
-      "title": "Authentication",
-      "addToNavigation": false
-    },
-    {
-      "type": "kendo-ui-mobile:view",
-      "name": "authenticationView1",
-      "components": [
-        {
-          "type": "kendo-ui-mobile:authentication",
-          "name": "authenticationView1Model",
-          "dataProvider": "wegingen",
-          "emailLabel": "Email",
-          "passwordLabel": "Password",
-          "signinLabel": "Sign In",
-          "signinRedirect": "home",
-          "enableRegistration": true,
-          "gotoRegisterLabel": "Register",
-          "registerEmailLabel": "Email",
-          "registerPasswordLabel": "Password",
-          "registerNameLabel": "Name",
-          "registerLabel": "Register",
-          "registerRedirect": "home",
-          "gotoSigninLabel": "Sign In",
-          "enableLogout": false,
-          "enableRememberme": false
-        }
-      ],
-      "title": "Authentication",
-      "addToNavigation": false
     }
   ],
   "dataProviders": [
