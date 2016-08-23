@@ -13,7 +13,7 @@
             <ul class="form-content" data-role="listview" data-style="inset">
                 <li class="form-content-item edittt">
                     <div class="itemHolder">
-                        <h4>Bondetails</h4>
+                        <h5>Bondetails</h5>
                     	<p class="editableListItem">
                        		<label><span>Bonnummer</span>
                             	<span data-bind="text: itemData.bonnr"></span>
@@ -36,7 +36,7 @@
                   		</p>
                     </div>
                     <div class="itemHolder">
-                        <h4>Adresgegevens</h4>
+                        <h5>Adresgegevens</h5>
                     	<p class="editableListItem">
                         <label><span>Postcode</span>
                             <span data-bind="text: itemData.postcode"></span>
@@ -59,7 +59,7 @@
                   	</p>
                     </div>
                     <div class="itemHolder">
-                        <h4>Afvalgegevens</h4>
+                        <h5>Afvalgegevens</h5>
                     	<p class="editableListItem">
                         <label><span>Categorie</span>
                             <span data-bind="text: itemData.afval_type"></span>
@@ -71,13 +71,11 @@
                         </label>           
                   	</p>
                     </div>                                      
-                </li>
-            </ul>
-            <ul data-role="listview" >
-                <li>
-                    <p class="editableListItem">
-                        <select height="auto" 
-                                style="left: 10px; width:90%; margin:0,5%,0,5%;" data-value-field="afval_id" 
+                	<div class="itemHolder">
+                        <h5>Selecteer Afvalsoort</h5>
+                    	<p class="editableListItem">
+                        <select class="selectType"
+                                data-value-field="afval_id" 
                                 data-text-field="afval_omschr" 
                                 data-role="dropdownlist" 
                                 data-bind="source: homeModel.afvalcodes, 
@@ -85,17 +83,16 @@
                                            events: { select: onSelect, 
                                                      change: onChange }"
                         >
-                        </select> 
-                  	</p>
-				</li>
-            </ul>
-            <ul data-role="listview" data-style="inset">
-                <li data-bind="visible: PrijsNieuw">
-                	<p class="editableListItem">
+                        </select>
+                    </p>
+                    </div>
+                    <div class="itemHolder">
+                    	<p class="editableListItem">
                         <label><span style="color:red">Nieuw kilogram tarief</span>
                             <span style="color:red" data-format="c4" data-bind="text: fldPrijsNieuw"></span>
                         </label>           
-                  	</p>
+                  		</p>
+                    </div>
 				</li>
             </ul>
         </form>
