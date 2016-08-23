@@ -191,6 +191,9 @@
     font-size: 40px!important;
 }
 
+.km-back:before {
+    color: #F99635!important;
+}
 
 .heading{
     text-transform: uppercase;
@@ -220,18 +223,48 @@
     color: white!important;
 }
 
-.edittt{
-    background: lightblue!important;
+.header-text{
+    background-color: #F5F5F7!important;
+    background-image: none!important;
+}
+
+.header-text span{
+    color: black!important;
 }
 
 .edittt span:nth-child(odd){
- 	font-weight: bold!important;   
+    color: black;
 }
 
-.edittt span{
-    color: #2d3e50!important;
-    padding-top: 1%;
-    padding-bottom: 1%;
+.edittt span:nth-child(even){
+ 	right: 0;
+    position: absolute;
+    text-align: right;
+}
+
+.form-content-item{
+    padding:0!important;
+}
+
+.itemHolder h4{
+    background-color: #EFEFF4;
+    color: #717176!important;
+    text-transform:uppercase;
+    padding: 40px 0 5px 20px;
+    margin:0;
+    border-top: 1px solid #ABABAE;
+    border-bottom: 1px solid #ABABAE;
+}
+
+.itemHolder p{
+    padding-bottom: 10px!important;
+	padding-top: 10px!important;
+    margin-left: 20px!important;
+    border-bottom: 1px solid #eee;
+}
+
+.itemHolder p:last-of-type{
+    border-bottom: 0;
 }
 /* Add custom code here. For more information about custom code, see http://docs.telerik.com/platform/screenbuilder/troubleshooting/how-to-keep-custom-code-changes */
 

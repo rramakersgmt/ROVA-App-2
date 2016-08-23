@@ -12,27 +12,32 @@
         <form>
             <ul class="form-content" data-role="listview" data-style="inset">
                 <li class="form-content-item edittt">
-                    <p class="editableListItem">
-                        <label><span>Bonnummer</span>
-                            <span data-bind="text: itemData.bonnr"></span>
-                        </label>           
-                  	</p>
-                    <p class="editableListItem">
-                        <label><span>Datum</span>
-                            <span data-bind="text: itemData.datum"></span>
-                        </label>           
-                  	</p>
-                    <p class="editableListItem">
-                        <label><span>Gewicht</span>
-                            <span style="width:100px;" align="right" data-format="####0 kg" data-bind="text: itemData.inweging"></span>
-                        </label>           
-                  	</p>
-                    <p class="editableListItem">
-                        <label><span>Quotum</span>
-                            <span style="width:100px;" align="right" data-format="####0 kg" data-bind="text: itemData.quotum"></span>
-                        </label>           
-                  	</p>
-                    <p class="editableListItem">
+                    <div class="itemHolder">
+                        <h4>Bondetails</h4>
+                    	<p class="editableListItem">
+                       		<label><span>Bonnummer</span>
+                            	<span data-bind="text: itemData.bonnr"></span>
+                        	</label>           
+                  		</p>
+                        <p class="editableListItem">
+                        	<label><span>Datum</span>
+                            	<span data-bind="text: itemData.datum"></span>
+                        	</label>           
+                  		</p>
+                    	<p class="editableListItem">
+                        	<label><span>Gewicht</span>
+                            	<span style="width:100px;" align="right" data-format="####0 kg" data-bind="text: itemData.inweging"></span>
+                        	</label>           
+                  		</p>
+                    	<p class="editableListItem">
+                        	<label><span>Quotum</span>
+                            	<span style="width:100px;" align="right" data-format="####0 kg" data-bind="text: itemData.quotum"></span>
+                        	</label>           
+                  		</p>
+                    </div>
+                    <div class="itemHolder">
+                        <h4>Adresgegevens</h4>
+                    	<p class="editableListItem">
                         <label><span>Postcode</span>
                             <span data-bind="text: itemData.postcode"></span>
                         </label>           
@@ -52,7 +57,10 @@
                             <span data-bind="text: itemData.straat"></span>
                         </label>           
                   	</p>
-                    <p class="editableListItem">
+                    </div>
+                    <div class="itemHolder">
+                        <h4>Afvalgegevens</h4>
+                    	<p class="editableListItem">
                         <label><span>Categorie</span>
                             <span data-bind="text: itemData.afval_type"></span>
                         </label>           
@@ -62,6 +70,7 @@
                             <span data-format="c4" data-bind="text: itemData.afval_prijs"></span>
                         </label>           
                   	</p>
+                    </div>                                      
                 </li>
             </ul>
             <ul data-role="listview" >
