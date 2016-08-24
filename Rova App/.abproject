@@ -2,10 +2,10 @@
   "ProjectName": "Rova App",
   "ProjectGuid": "609e4e54-56ba-4108-a6d2-4451c6105507",
   "projectVersion": 1,
-  "AppIdentifier": "com.telerik.RovaKamen",
-  "DisplayName": "Rova Kamen",
+  "AppIdentifier": "com.telerik.RovaZwolle",
+  "DisplayName": "Rova Zwolle",
   "Author": "",
-  "Description": "Rova Kamen",
+  "Description": "Rova Zwolle",
   "BundleVersion": "1.0",
   "AndroidVersionCode": "1",
   "iOSDeviceFamily": [
